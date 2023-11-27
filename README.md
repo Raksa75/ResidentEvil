@@ -2,7 +2,7 @@
 Projet par Nicolas "Raksakoreko" & Thomas GD
 
 - Déplacements : Fait
-- Coder et trigger des caméras CACA
+- Coder et trigger des caméras
 - Coder un Pickup
 - Coder les effets du Pickup
 - Coder la mort du personnage
