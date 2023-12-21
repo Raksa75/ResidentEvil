@@ -31,22 +31,21 @@ public class ChasePlayer : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider collision)
     {
         // Gérez la collision avec le joueur
-        if (other.CompareTag("Player"))
+        if (collision.tag == "Player")
         {
-            // Redémarrez le niveau (vous pouvez remplacer cela par le code de redémarrage approprié)
-            RestartLevel();
+            SceneManager.LoadSceneAsync(2);
         }
     }
 
     void RestartLevel()
     {
-        SceneManager.LoadScene("SampleScene");
+    //    SceneManager.LoadScene("SampleScene");
         // À remplacer par votre logique de redémarrage de niveau
         // Par exemple, rechargez la scène ou réinitialisez la position du joueur et de l'IA
         Debug.Log("Level Restarted");
-       SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+   //    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
