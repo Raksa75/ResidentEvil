@@ -5,9 +5,9 @@ Projet par Nicolas "Raksakoreko" & Thomas GD
 - Coder et trigger des caméras : Fait
 - Coder un Pickup : Fait
 - Coder les effets du Pickup : Fait
-- Coder la mort du personnage
+- Coder la mort du personnage : Fait
 - Coder les conditions de victoires
-- Créer une animation
+- Créer une animation : Fait
 - Créer un gameplay
 - Un LD 
 - Ambiance Sonore
