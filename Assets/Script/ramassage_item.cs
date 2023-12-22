@@ -15,9 +15,12 @@ public class ramassage_item : MonoBehaviour
             OpenDoor();
         }
 
-        else if (other.CompareTag("Porte"))
+        else if (other.CompareTag("Cle2"))
         {
-            // Code pour ouvrir la porte
+            // La clé a été ramassée
+            Destroy(other.gameObject); // Détruit la clé
+            // Autres actions à effectuer lors du ramassage de la clé (par exemple, ouvrir la porte)
+            OpenDoor2();
         }
         
     }
@@ -30,6 +33,16 @@ public class ramassage_item : MonoBehaviour
             door.GetComponent<DoorController>().OpenDoor();
         }
     }
+
+    void OpenDoor2()
+    {
+        GameObject[] doors = GameObject.FindGameObjectsWithTag("Porte2");
+        foreach (GameObject door in doors)
+        {
+            door.GetComponent<DoorController>().OpenDoor();
+        }
+    }
+
 
     // Start is called before the first frame update
     void Start()

@@ -17,6 +17,11 @@ public class DoorController : MonoBehaviour
         animator.SetTrigger("OpenTrigger");// "Open" est le nom du déclencheur dans l'Animator
     }
 
+    public void OpenDoor2()
+    {
+        animator.SetTrigger("OpenTrigger");// "Open" est le nom du déclencheur dans l'Animator
+    }
+
     // Update is called once per frame
     void Update()
     {

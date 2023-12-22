@@ -7,6 +7,8 @@ TagManager:
   - Enemy
   - Cle
   - Porte
+  - Cle2
+  - Porte2
   layers:
   - Default
   - TransparentFX
